@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: sanjacob/markdown-list
+      - uses: sanjacob/markdown-list@master
         with:
           file: EXAMPLE.md
           header: Cities
