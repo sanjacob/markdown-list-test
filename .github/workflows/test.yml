@@ -14,8 +14,9 @@ jobs:
           file: EXAMPLE.md
           header: Cities
           item: Mexico City
+      - run: ls
+      - run: cat EXAMPLE.md
       - uses: actions/upload-artifact@v4
         with:
           name: Output
           path: EXAMPLE.md
-
