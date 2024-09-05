@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sanjacob/markdown-list
+        with:
+          file: EXAMPLE.md
+          header: Cities
+          item: Mexico City
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Output
+          path: EXAMPLE.md
+
